@@ -1,0 +1,33 @@
+<link rel="import" href="../app-common-behavior/app-common-behavior.html">
+
+<dom-module id="app-shell">
+
+    <template>
+
+        <style>
+            :host {
+                @apply(--layout-fit);
+                display: block;
+                overflow: visible;
+                text-align: left;
+            }
+        </style>
+
+        <h1>Hello world!</h1>
+
+    </template>
+
+    <script>
+        Polymer({
+
+            // ELEMENT
+            is: 'app-shell',
+
+            // BEHAVIORS
+            behaviors: [
+                Polymer.AppCommonBehavior
+            ]
+        });
+    </script>
+
+</dom-module>
